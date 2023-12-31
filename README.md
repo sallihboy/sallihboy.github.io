@@ -1,2 +1,2 @@
-# sallihboy.github.com
+# sallihboy.github.io
 Personal website

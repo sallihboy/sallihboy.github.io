@@ -21,17 +21,23 @@
 		width: 100%;
 	}
 	
+	ol {
+		list-style-type:none;
+		position: fixed;
+		width: 100%;
+		background-color: #2d3142;
+	}
+	
 	li{
 		float:left;
 	}
 	
 }
 
-ul {
+ol {
 	list-style-type:none;
-	margin:0;
-	padding:0;
-	width: 90%;
+	padding: 0px 0px;
+	width: 75%;
 	background-color: #2d3142;
 }
 

@@ -1,13 +1,43 @@
+* {
+	box-sizing: border-box;
+}
+
+.left, .right {
+	float: left;
+	width: 25%;
+}
+.main {
+	float: left;
+	width: 50%;
+}
+
+@media only screen and (max-width:800px){
+	.left, .right {
+		float: left;
+		width: 100%;
+	}
+	.main {
+		float: left;
+		width: 100%;
+	}
+}
+
 body {
-	background-color: #facfad;
+	background-color: #f8f6dd;
 	font-family: 'Courier New', monospace;
-	color: #3e4e50;
+	color: #020805;
 }
 
 h1 {
-	background-color: #f5ac72;
+	text-align:center;
+	background-color: #163e3a;
+	color:#f8f6dd;
 }
 
 p {
-	background-color: #f8bd7f;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }

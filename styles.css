@@ -20,18 +20,43 @@
 		float: left;
 		width: 100%;
 	}
+	
+	li{
+		float:left;
+	}
+	
+}
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width: 90%;
+	background-color: #2d3142;
+}
+
+li a {
+	display: block;
+	background-color: #2d3142;
+	color:#ffffff;
+	padding:10px 12px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #ef8354;
+	color:#ffffff;
 }
 
 body {
-	background-color: #f8f6dd;
+	background-color: #ffffff;
 	font-family: 'Courier New', monospace;
-	color: #020805;
+	color: #2d3142;
 }
 
 h1 {
-	text-align:center;
-	background-color: #163e3a;
-	color:#f8f6dd;
+	text-align:left;
+	color: #4f5d75;
 }
 
 p {

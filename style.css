@@ -56,6 +56,10 @@ h1, h2, h3{
 	padding:0 0 12px;
 }
 
+h1{font-size:21px;}
+h2{font-size:16px;}
+h3{font-size:16px;}
+
 p{
 	padding:0 0 12px;
 	text-align:justify;
@@ -83,6 +87,10 @@ model-viewer{
 	background-color: #073b4c;
 }
 
+/*#Home:hover, #Bachelor:hover, #Projects:hover, #Models:hover, #Contact:hover{
+	background-color: #cbcbcb;
+}*/
+
 #Bachelor{
  	background-color: #118ab2;
 }
@@ -105,19 +113,14 @@ model-viewer{
 	transform:translate(12px,0);
 }
 
-.nav-container a:hover {
-  background-color: #cbcbcb;
-  color:white;
-}
-
 @keyframes animation{
   from {transform:translate(0,0);}
   to {transform:translate(12px,0);}
 }
 
 @keyframes blendin{
-	from {opacity:0;width:62vw;}
-	to {opacity:1;width:60vw;}
+	from {opacity:0;padding:10px 48px;}
+	to {opacity:1;padding:20px 48px;}
 }
 
 @media screen and (max-width: 600px) {
@@ -178,7 +181,7 @@ model-viewer{
 	.nav-container a.active {
 		animation-name: animation;
 		animation-duration: 0.5s;
-		transform:translate(0,12px);
+		transform:translate(0,-12px);
 	}
 
 	.nav-container a:hover {
@@ -199,7 +202,7 @@ model-viewer{
 
 	@keyframes animation {
 	  	from {transform:translate(0,0);}
-	  	to {transform:translate(0,12px);}
+	  	to {transform:translate(0,-12px);}
 	}
 	
 	@keyframes blendin{

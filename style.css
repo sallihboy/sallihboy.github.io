@@ -11,7 +11,7 @@
 .parta {
 	display:block;
 	position:fixed;
-	width:18%;
+	width:16vw;
 }
 
 .header {
@@ -20,19 +20,22 @@
 	text-decoration: none;
 	text-align:right;
 	padding:20px 0;
-	background-color:#fff;
+	background-color:#f8f8f8;
 }
 
 .partb {
+	animation-name: blendin;
+	animation-duration: 1s;
+	/*background-color:pink;*/
 	display:block;
-    width:60%;
+    width:60vw;
 	margin:0 auto;
 	padding:20px 48px;
 }
 
 body {
   font-family: Arial;
-  background-color:#ffffff;
+  background-color:#f8f8f8;
   margin: 0;
   padding: 0;
 }
@@ -49,43 +52,79 @@ img{
 	margin:12px auto 24px;
 }
 
-h2{
+h1, h2, h3{
 	padding:0 0 12px;
 }
 
 p{
 	padding:0 0 12px;
 	text-align:justify;
-	letter-spacing:2px;
+	letter-spacing:1px;
 }
 
-.nav-container a  {
+model-viewer{
+	/*background-color:lightblue;*/
+	width:40vw;
+	height:40vw;
+	margin:0 0 12px;
+	padding:0 60px;
+}
+
+.nav-container a {
 	display:block;
   	color: white;
 	text-decoration: none;
 	text-align:right;
 	padding:6px 12px 6px 0;
-	margin: 2px 0;
- 	background-color: #3B645B;
+	margin: 2px 0 0 -12px;
 }
 
-.nav-container a.active {
-	background-color: #ffffff;
-	color: black;
+#Home{
+	background-color: #073b4c;
+}
+
+#Bachelor{
+ 	background-color: #118ab2;
+}
+
+#Projects{
+	background-color: #06d6a0;
+}
+
+#Models{
+	background-color:#ffd166;
+}
+
+#Contact{
+	background-color: #f78c6b;
+}
+
+.nav-container a.active{
+	animation-name: animation;
+	animation-duration: 0.5s;
+	transform:translate(12px,0);
 }
 
 .nav-container a:hover {
-  background-color: #cde4df;
-  color:black;
+  background-color: #cbcbcb;
+  color:white;
+}
+
+@keyframes animation{
+  from {transform:translate(0,0);}
+  to {transform:translate(12px,0);}
+}
+
+@keyframes blendin{
+	from {opacity:0;width:62vw;}
+	to {opacity:1;width:60vw;}
 }
 
 @media screen and (max-width: 600px) {
 	
 	body {
 	  font-family: Arial;
-	  margin: 0;
-	  padding: 0;
-	  background-color:#ffffff;
+	  background-color:#f8f8f8;
 	}
 	
 	.img-header {
@@ -98,7 +137,7 @@ p{
 
 	.parta {
 		width:100%;
-		background-color:#ffffff;
+		background-color:#f8f8f8;
 		display:block;
 		position:fixed;
 	}
@@ -106,46 +145,45 @@ p{
 	.partb {
 		display:block;
 	    width: 100%;
-		margin:112px 0 0;
+		margin:136px 0 0;
 		padding:0 6%;
 	}
 	
 	.header {
 		display:block;
 		text-align:center;
-		font-size:16px;
+		font-size:20px;
 		margin:0;
 		padding:12px 0;
+		background-color:#f8f8f8;
 		
 	}
 
 	.nav-container {
 		display:flex;
-		flex-wrap:wrap;
 		justify-content:center;
 		
 	}
 
 	.nav-container a {
-		background-color: #3B645B;
 		color: white;
 		font-size:12px;
-		padding:12px 12px;
 		text-align:center;
 		text-decoration: none;
 	 	display:inline-block;
+		padding:12px 12px 12px;
+		margin: 0 -1px 12px;
 	}
 
 	.nav-container a.active {
-		background-color: #ffffff;
-		color: black;
-		padding:10px 10px;
-		border:2px solid #3B645B; 
+		animation-name: animation;
+		animation-duration: 0.5s;
+		transform:translate(0,12px);
 	}
 
 	.nav-container a:hover {
-	  background-color: #cde4df;
-	  color:black;
+		background-color: #cbcbcb;
+	    color:white;
 	}
 
 	h2 {
@@ -157,6 +195,16 @@ p{
 		padding:0 0 12px;
 		text-align:justify;
 		font-size:12px;
+	}
+
+	@keyframes animation {
+	  	from {transform:translate(0,0);}
+	  	to {transform:translate(0,12px);}
+	}
+	
+	@keyframes blendin{
+		from {opacity:0;padding:10% 6%;}
+		to {opacity:1;padding:0 6%;}
 	}
 	
 }

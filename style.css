@@ -123,6 +123,10 @@ model-viewer{
 	to {opacity:1;padding:20px 48px;}
 }
 
+iframe{
+	display:none;
+}
+
 @media screen and (max-width: 600px) {
 	
 	body {

@@ -32,7 +32,7 @@ body {
 }
 
 img{
-	display:block;
+	display:none;
 	width: 100%;
 	margin:0 0 1px;
 }
@@ -43,7 +43,7 @@ img{
 }
 
 .img-header{
-	display:block;
+	display:none;
 	width: 100%;
 }
 
@@ -139,7 +139,7 @@ iframe{
 	}
 	
 	.img-header {
-		display:block;
+		display:none;
 		height:20vh;
 		width:20vh;
 		position:fixed;

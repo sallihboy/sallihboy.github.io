@@ -30,7 +30,8 @@
 	display:block;
 	position:absolute;
 	width:12vw;
-	
+	top: 50%;
+	transform: translate(0, -50%);
 }
 
 .partb {
@@ -75,27 +76,32 @@ img{
 	padding:6px 12px;
 }
 
-h1, h2, h3{
-	padding:12px 0;
+h1{
+	font-size:21px;
+	padding:0 0 12px;
 }
 
-h1{font-size:21px;}
-h2{font-size:16px;}
-h3{font-size:16px;}
-p{font-size:14px;}
+h2{
+	font-size:14px;
+	padding:0 0 12px;
+}
+h3{
+	font-size:14px;
+	padding:0 0 12px;
+}
 
 p{
-	padding:0 0 12px;
+	font-size:14px;
+	padding:0 0 24px;
 	text-align:justify;
 	letter-spacing:1px;
 }
 
-model-viewer{
-	width:100%;
-	height:40vh;
-	margin:0 0 12px;
-	padding:0 60px;
-}
+#Home{background-color: var(--c1);}
+#Bachelor{background-color: var(--c2);}
+#Projects{background-color: var(--c3);}
+#Models{background-color:var(--c4);}
+#Contact{background-color: var(--c5);}
 
 .nav-container a {
 	display:block;
@@ -103,48 +109,36 @@ model-viewer{
 	text-decoration: none;
 	text-align:right;
 	padding:6px 12px 6px 0;
-	margin: 2px 0 0 -16px;
+	margin: 2px 0 0 -20%;
 	border-radius:4px;
-}
-
-#Home{
-	background-color: var(--c1);
-}
-
-/*#Home:hover, #Bachelor:hover, #Projects:hover, #Models:hover, #Contact:hover{
-	background-color: #cbcbcb;
-}*/
-
-#Bachelor{
- 	background-color: var(--c2);
-}
-
-#Projects{
-	background-color: var(--c3);
-}
-
-#Models{
-	background-color:var(--c4);
-}
-
-#Contact{
-	background-color: var(--c5);
+	transition:transform 0.5s;
 }
 
 .nav-container a.active{
 	animation-name: animation;
 	animation-duration: 0.5s;
-	transform:translate(12px,0);
+	transform:translate(12%,0);
+}
+
+.nav-container a:not(.active):hover{
+	transform:translate(2%,0);
 }
 
 @keyframes animation{
   from {transform:translate(0,0);}
-  to {transform:translate(12px,0);}
+  to {transform:translate(12%,0);}
 }
 
 @keyframes blendin{
 	from {opacity:0;padding:10px 48px;}
 	to {opacity:1;padding:20px 48px;}
+}
+
+model-viewer{
+	width:100%;
+	height:40vh;
+	margin:0 0 12px;
+	padding:0 60px;
 }
 
 iframe{
@@ -174,6 +168,8 @@ iframe{
 		background-color:var(--c6);
 		display:block;
 		position:fixed;
+		top: 0;
+		transform: translate(0, 0);
 	}
 	
 	.partb {
@@ -212,12 +208,10 @@ iframe{
 	.nav-container a.active {
 		animation-name: animation;
 		animation-duration: 0.5s;
-		transform:translate(0,12px);
+		transform:translate(0,8%);
 	}
 
-	.nav-container a:hover {
-		background-color: #cbcbcb;
-	    color:white;
+	.nav-container a:not(.active):hover {
 	}
 
 	h2 {
@@ -233,7 +227,7 @@ iframe{
 
 	@keyframes animation {
 	  	from {transform:translate(0,0);}
-	  	to {transform:translate(0,12px);}
+	  	to {transform:translate(0,8%);}
 	}
 	
 	@keyframes blendin{

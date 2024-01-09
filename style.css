@@ -1,3 +1,21 @@
+/*:root{
+	--c1: #b744b8;
+	--c2: #a379c9;
+	--c3: #adb9e3;
+	--c4: #acdde7;
+	--c5: #9ad5ca;
+	--c6: #ffffff;
+}*/
+
+:root{
+	--c1: #073b4c;
+	--c2: #118ab2;
+	--c3: #06d6a0;
+	--c4: #ffd166;
+	--c5: #f78c6b;
+	--c6: #f8f8f8;
+}
+
 *{
 	box-sizing:border-box;
 	margin:0;
@@ -12,11 +30,12 @@
 	display:block;
 	position:absolute;
 	width:12vw;
+	
 }
 
 .partb {
 	animation-name: blendin;
-	animation-duration: 1s;
+	animation-duration: 0.5s;
 	/*background-color:pink;*/
 	display:block;
     width:60vw;
@@ -26,7 +45,7 @@
 
 body {
   font-family: Arial;
-  background-color:#f8f8f8;
+  background-color: var(--c6);
   margin: 0;
   padding: 0;
 }
@@ -73,7 +92,6 @@ p{
 model-viewer{
 	/*background-color:lightblue;*/
 	width:40vw;
-	height:40vw;
 	margin:0 0 12px;
 	padding:0 60px;
 }
@@ -89,7 +107,7 @@ model-viewer{
 }
 
 #Home{
-	background-color: #073b4c;
+	background-color: var(--c1);
 }
 
 /*#Home:hover, #Bachelor:hover, #Projects:hover, #Models:hover, #Contact:hover{
@@ -97,19 +115,19 @@ model-viewer{
 }*/
 
 #Bachelor{
- 	background-color: #118ab2;
+ 	background-color: var(--c2);
 }
 
 #Projects{
-	background-color: #06d6a0;
+	background-color: var(--c3);
 }
 
 #Models{
-	background-color:#ffd166;
+	background-color:var(--c4);
 }
 
 #Contact{
-	background-color: #f78c6b;
+	background-color: var(--c5);
 }
 
 .nav-container a.active{
@@ -136,7 +154,7 @@ iframe{
 	
 	body {
 	  font-family: Arial;
-	  background-color:#f8f8f8;
+	  background-color:var(--c6);
 	}
 	
 	.img-header {
@@ -152,7 +170,7 @@ iframe{
 
 	.parta {
 		width:100%;
-		background-color:#f5f5f5;
+		background-color:var(--c6);
 		display:block;
 		position:fixed;
 	}
@@ -170,7 +188,7 @@ iframe{
 		font-size:20px;
 		margin:0;
 		padding:12px 0;
-		background-color:#f8f8f8;
+		background-color:var(--c6);
 		
 	}
 
